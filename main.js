@@ -53,19 +53,16 @@ function insertIpsium() {
     document.getElementById('container').innerHTML = '<p>' + p.generateParagraph() + '</p>';
 }
 
-let copied = false;
-function copy() {
-    /* Get the text field */
-    var copyText = document.getElementById("copy");
-    if (copied){
-        copyText.innerHTML = 'Copy';
-        copied = false;
-    } else {
-        copyText.innerHTML = 'Copied!';
-        copied = true;
-    }
-    
-  
-}
+// let copied = false;
+// function copy() {
+//     var copyText = document.getElementById("copy");
+//     if (copied){
+//         copyText.innerHTML = 'Copy';
+//         copied = false;
+//     } else {
+//         copyText.innerHTML = 'Copied!';
+//         copied = true;
+//     }
+// }
 document.getElementsByTagName('button')[0].onclick = insertIpsium;
 
